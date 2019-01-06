@@ -1,3 +1,14 @@
 body {
   background-image: linear-gradient(to bottom right, blue, white);
 }
+
+table {
+  margin: auto;
+  background-color: #523e7c;
+  width: 100px;
+  max-width: 100px;
+  height: 325px;
+  text-align: center;
+  border-radius: 2px;
+  padding-right: 8px;
+}
