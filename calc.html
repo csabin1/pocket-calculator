@@ -1,49 +1,39 @@
 <!DOCTYPE.html>
 <html>
-<head>
-  <link rel="stylesheet" type="text/css" href="calc.css"
-<body>
-  <h1><center>Clarissa Sabin
-    <br>
-    A 3/4
-  </br>
-</h1></center>
-<center>
-  <table>
-  <table style="width=100%"
-<table border="1">
-  <tr>
-    <td>1</td>
-    <td>2</td>
-    <td>3</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
-  </tr>
-  <tr>
-    <td>7</td>
-    <td>8</td>
-    <td>9</td>
-</table>
-</center>
-<center>
-<input id="display" type="text" name="display" readonly>
-<br>
-<input class="button digits" type="button" value="1" onclick="calculator.display.value += '1'">
-<input class="button digits" type="button" value="2" onclick="calculator.display.value += '2'">
-<input class="button digits" type="button" value="3" onclick="calculator.display.value += '3'">
-<input class="button mathButtons" type="button" value="x" onclick="calculator.display.value += ' * '">
-<br>
-<input class="button digits" type="button" value="7" onclick="calculator.display.value += '7'">
-			<input class="button digits" type="button" value="8" onclick="calculator.display.value += '8'">
-			<input class="button digits" type="button" value="9" onclick="calculator.display.value += '9'">
-			<input class="button mathButtons" type="button" value="+" onclick="calculator.display.value += ' + '">
-			<br>
-<input id="clearButton" class="button" type="button" value="C" onclick="calculator.display.value = ''">
-<input class="button digits" type="button" value="0" onclick="calculator.display.value += '0'">
-<input class="button mathButtons" type="button" value="=" onclick="calculator.display.value = eval(calculator.display.value)">
-<input class="button mathButtons" type="button" value="/" onclick="calculator.display.value += ' / '">
-</center>
+   <head></head>
+   <body>
+	   <h2>Clarissa Sabin</h2>
+	   <h3>A 3-4 Pocket Calculator</h3>
+      <form name=”calculator”>
+        <div class="main">
+          <form name = "form">
+            <input class="textview">
+        </form>
+	      <table>
+		      <tr>
+			      <td><input type="button" value="C" onclick="insert(7)"></td>
+            <td><input type="button" value="<" onclick="insert(7)"></td>
+            <td><input type="button" value="/" onclick="insert(7)"></td>
+            <td><input type="button" value="*" onclick="insert(7)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="7" onclick="insert(7)"></td>
+            <td><input type="button" value="8" onclick="insert(8)"></td>
+            <td><input type="button" value="9" onclick="insert(9)"></td>
+            <td><input type="button" value="-" onclick="insert(7)"></td>
+          </tr>
+          <tr>
+			      <td><input type="button" value="4" onclick="insert(4)"></td>
+            <td><input type="button" value="5" onclick="insert(5)"></td>
+            <td><input type="button" value="6" onclick="insert(6)"></td>
+            <td><input type="button" value="+" onclick="insert(7)"></td>
+          </tr>
+          <tr>
+            <td><input type="button" value="1" onclick="insert(1)"></td>
+            <td><input type="button" value="2" onclick="insert(2)"></td>
+            <td><input type="button" value="3" onclick="insert(3)"></td>
+            <td><input type="button" value="=" onclick="insert(equal)"></td>
+          </tr>
+	      </table>
+   </body>
 </html>
