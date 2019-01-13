@@ -12,22 +12,26 @@
 			      </td>
 		      </tr>
 		      <tr>
-			    <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'"></td>
-               <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'"></td>
-               <td><input type="button" name="three" value="3" onclick="calculator.display.value += '3'"></td>
-               <td><input type="button" class="operator" name="plus" value="+" onclick="calculator.display.value += '+'"></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'"></td>
-               <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'"></td>
-               <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'"></td>
-               <td><input type="button" class="operator" name="minus" value="-" onclick="calculator.display.value += '-'"></td>
-            </tr>
-            <tr>
-               <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'"></td>
-               <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'"></td>
-               <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'"></td>
-               <td><input type="button" class="operator" name="times" value="x" onclick="calculator.display.value += '*'"></td>
+			    <td><input type="button" class="button" value="1" onclick="one()">
+        <input type="button" class="button" value="2" onclick="two()">
+        <input type="button" class="button" value="3" onclick="three()">
+        <input type="button" id="plus" 	class="button" 	value="+"  onclick="Plus()">
+
+        <input type="button" class="button" value="4" onclick="four()">
+        <input type="button" class="button" value="5" onclick="five()">
+        <input type="button" class="button" value="6" onclick="six()">
+        <input type="button" id="minus" 	class="button" 	value="-" onclick="Minus()" >
+
+        <input type="button" class="button" value="7" onclick="seven()">
+        <input type="button" class="button" value="8" onclick="eight()">
+        <input type="button" class="button" value="9" onclick="nine()">
+        <input type="button" id="divide" 	class="button" 	value="/" onclick="Divide()" >
+
+        <input type="button" class="button" value="0" onclick="zero()">
+        <input type="button" class="button" value="C" onclick="C()">
+
+        <input type="button" class="button"	value="=" onclick="Equals()">
+        <input type="button" class="button" 	value="*" onclick="Multiply()">
 	      </table>
       </form>
    </body>
