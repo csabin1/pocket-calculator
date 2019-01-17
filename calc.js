@@ -1,266 +1,72 @@
-var firstnumber;
-var secondnumber;
-var result;
-var operations;
+function run1(){
 
-function numone(){
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
+	document.case.display.value += "1"
+};
+function run2(){
 
-  document.lcdform.lcds.value = "1";
+	document.case.display.value += "2"
+};
+function run3(){
 
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "1";
- }
+	document.case.display.value += "3"
+};
+function run4(){
 
+	document.case.display.value += "4"
+};
+function run5(){
+
+	document.case.display.value += "5"
+};
+
+function run6(){
+
+	document.case.display.value += "6"
+};
+
+function run7(){
+
+	document.case.display.value += "7"
+};
+
+function run8(){
+
+	document.case.display.value += "8"
+};
+
+function run9(){
+
+	document.case.display.value += "9"
+};
+
+function run0(){
+
+	document.case.display.value += "0"
+};
+function runPlus(){
+
+	document.case.display.value += "+"
+};
+function runMinus(){
+
+	document.case.display.value += "-"
+};
+function runDivide(){
+
+	document.case.display.value += "/"
+};
+function runMultiply(){
+
+	document.case.display.value += "*"
+};
+
+function runC(){
+
+	document.case.display.value = ""
+};
+
+
+function runEquals() {
+	var equals = eval(document.case.display.value)
+	document.case.display.value = equals;
 }
-function numtwo(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "2";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "2";
- }
-
-}
-function numthree(){
-
-  if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "3";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "3";
- }
-
-}
-function numfour(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "4";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "4";
- }
-
-}
-function numfive(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "5";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "5";
- }
-
-}
-function numsix(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "6";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "6";
- }
-
-}
-function numseven(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "7";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "7";
- }
-}
-function numeight(){
-
- if (document.lcdform.lcds.value == "0"){
-
-  document.lcdform.lcds.value = "8";
-
- }
- else if (document.lcdform.lcds.value == result)
- {
-  document.lcdform.lcds.value = "8";
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "8";
- }
-
-}
-function numnine(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  document.lcdform.lcds.value = "9";
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "9";
- }
-
-}
-function numzero(){
-
- if (document.lcdform.lcds.value == "0"){
-
-  document.lcdform.lcds.value = "0";
-
- }
- else if (document.lcdform.lcds.value == result)
- {
-  document.lcdform.lcds.value = "0";
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "0";
- }
-
-}
-function numdobuzero(){
-
- if (document.lcdform.lcds.value == "0" || document.lcdform.lcds.value == result){
-
-  return;
-
- }
- else
- {
-  documentdocument.lcdform.lcds.value = document.lcdform.lcds.value + "00";
- }
-
-}
-function clr(){
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = "";
- return;
-}
-
-function operationplus(){
-
- operation = "+";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = firstnumber + operation;
-
-}
-function operationmult(){
-
- operation = "*";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = firstnumber + operation;
-
-}
-function operationminus(){
-
- operation = "-";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = firstnumber + operation;
-
-}
-function operationdivid(){
-
- operation = "/";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = firstnumber + operation;
-
-}
-function operationperc(){
-
- operation = "%";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
- document.lcdform.lcdsu.value = firstnumber + operation;
-
-}
-function equalsto(){
-
- secondnumber = parseInt(document.lcdform.lcds.value);
-
- if (operation == "+")
- {
-  result = firstnumber + secondnumber;
- }
- else if (operation == "*"){
-
-  result = firstnumber * secondnumber;
-
- }
- else if (operation == "-"){
-
-  result = firstnumber - secondnumber;
-
- }
-    else if (operation == "/"){
-
-  result = firstnumber / secondnumber;
-
- }
- else if (operation == "%"){
-
-  if (document.lcdform.lcds.value == "0"){
-
-  result = firstnumber / 100;
-  document.lcdform.lcdsu.value = firstnumber + operation + "100";
-  }
-  else if (document.lcdform.lcds.value != "0")  {
-   result = firstnumber / secondnumber * 100;
-   document.lcdform.lcdsu.value = firstnumber + operation + secondnumber + "*100 = " + result;
-  }
- }
- else if (operation == "^"){
-
-  for (var i = 0; i < secondnumber; i++){
-
-   result = firstnumber * i;
-  }
-
-
- }
- document.lcdform.lcds.value ="";
- document.lcdform.lcds.value = result.toString();
- document.lcdform.lcdsu.value = firstnumber + operation + secondnumber + " = " + result.toString();
- return;
-
-}
-
-function sqrots(){
- firstnumber = document.lcdform.lcds.value;
- result = Math.sqrt(parseInt(document.lcdform.lcds.value));
- document.lcdform.lcds.value = result;
- document.lcdform.lcdsu.value = "sqrt(" + firstnumber + ") = " + result;
-
-}
-
-function operationraistop(){
-
- operation = "^";
- firstnumber = parseInt(document.lcdform.lcds.value);
- document.lcdform.lcds.value = "0";
-
-}  
