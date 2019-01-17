@@ -1,52 +1,57 @@
+margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 16px;
+	vertical-align: baseline;
+	background: transparent;
+}
 body {
-background-color:#fff;
-margin: 0px auto;
-
+	line-height: 1;
 }
-.calbody{
- background: #097C9B;
- border: 1px solid #ff0;
- padding: 10px;
- margin-left: 450px;
- min-width: 27.4em;
- max-width: 27.4em;
-
-}
-h1{
- text-align: center;
- font-size: 40px;
- color: #003652;
-
+ul {
+	list-style: none;
 }
 
-#lcd{
- text-align: right;
- width: 23em;
- height: 40px;
- font-size: 18px;
 
+
+body {
+	width: 500px;
+}
+form {
+	background-color: gray;
+	text-align: center;
+	padding: 7px;
+	
 }
 
-#lcdu{
- color: grey;
- text-align: right;
- width: 27.6em;
- height: 35px;
- font-size: 15px;
-
+#display {
+	width: 98%;
+	height: 30px;
+	text-align: right;
+	font-size: 1.5rem;
 }
-
-button{
- background-color: #fff;
- width: 80px;
- height: 60px;
- font-size: 20px;
- border: 1px solid #097C9B;
-
-
+.digit {
+	font-size: 2rem;
+	background-color: red;
+	height: 55px;
+	width: 20%;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px;
 }
-
-button:hover{
-  background-color: #509CA9;
-
- }  
+.oper {
+	font-size: 2rem;
+	background-color: blue;
+	height: 55px;
+	width: 20%;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 5px;
+}
+#clearMem {
+	background-color: green;
+}
+#equal {
+	background-color: yellow;
+}
