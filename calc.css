@@ -1,5 +1,7 @@
 body {
   background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/theworldstro.jpg");
+  height: 500px;
+  width: 3000px;
 }
 
 * {
@@ -7,8 +9,8 @@ body {
 }
 
 button {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .grid {
