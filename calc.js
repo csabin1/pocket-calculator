@@ -36,17 +36,17 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
   if(Number(document.calc.display.value.length) <= 10){
     document.calc.display.value = document.calc.display.value
   }else{
-    document.getElementById("buttonNum0").disabled = true;
-    document.getElementById("buttonNum1").disabled = true;
-    document.getElementById("buttonNum2").disabled = true;
-    document.getElementById("buttonNum3").disabled = true;
-    document.getElementById("buttonNum4").disabled = true;
-    document.getElementById("buttonNum5").disabled = true;
-    document.getElementById("buttonNum6").disabled = true;
-    document.getElementById("buttonNum7").disabled = true;
-    document.getElementById("buttonNum8").disabled = true;
-    document.getElementById("buttonNum9").disabled = true;
-    document.getElementById("decimalButton").disabled = true;
+    document.getElementById("buttonNumber0").disabled = true;
+    document.getElementById("buttonNumber1").disabled = true;
+    document.getElementById("buttonNumber2").disabled = true;
+    document.getElementById("buttonNumber3").disabled = true;
+    document.getElementById("buttonNumber4").disabled = true;
+    document.getElementById("buttonNumber5").disabled = true;
+    document.getElementById("buttonNumber6").disabled = true;
+    document.getElementById("buttonNumber7").disabled = true;
+    document.getElementById("buttonNumber8").disabled = true;
+    document.getElementById("buttonNumber9").disabled = true;
+    document.getElementById("decimalSignButton").disabled = true;
   }
 
   if(decimalNumInsert == false){
