@@ -3,8 +3,8 @@
 <html>
   <head>
     <title>Pocket Calculator</title>
-  <link rel="stylesheet" type="text/css" href="pocket-calculator.css">
-  <script type="text/javascript" src="pocket-calculator.js"></script>
+  <link rel="stylesheet" type="text/css" href="calc.css">
+  <script type="text/javascript" src="calc.js"></script>
   </head>
 	<body>
 		<h3>AP COmp Sci Pocket Calculator</h3>
@@ -17,37 +17,36 @@
         <input name="display" disabled>
       </form>
       </div>
-     
-	   <table>
-        <tr>
-          <td><button class = "number" onclick = "numberOne()" >1</button>
-          <td><button class = "number" onclick = "numberTwo()">2</button>
-          <td><button class = "number" onclick = "numberThree()">3</button>
-          <td><button id = "addSign" class = "operator" onclick = "addSign()">+</button>
-          <td><button class = "mod" onclick = "percent()">%</button>
-        </tr>
-        <tr>
-          <td><button class = "number" onclick = "numberFour()">4</button>
-          <td><button class = "number" onclick = "numberFive()">5</button>
-          <td><button class = "number" onclick = "numberSix()">6</button>
-          <td><button class = "operator" onclick = "minusSign()">-</button>
-          <td><button class = "mod" onclick = "opposite()">+/-</button>
-        </tr>
-        <tr>
-          <td><button class = "number" onclick = "numberSeven()">7</button>
-          <td><button class = "number" onclick = "numberEight()">8</button>
-          <td><button class = "number" onclick = "numberNine()">9</button>
-          <td><button class = "operator" onclick = "multiplySign()">x</button>
-          <td rowspan = "2"><button  class = "mod" id = "tall" onclick = "clean()">AC</button>
-        </tr>
-        <tr>
-          <td colspan = "2"><button classs = "number" id = "wide" onclick = "numberZero()">0</button>
-          <td><button id = "decimalPlace" onclick = "decimalPlace()">.</button>
-          <td><button class = "operator" onclick = "divideSign()">/</button>
-        </tr>
-        <tr>
-          <td colspan = "5"><button class = "operator" id = "superwide" onclick = "equals()">=</button>
-      </table>
-	  
+	  <table>
+  <tr>
+    <td><button id="decimalButton" class="calc-buttons" onclick="decimalInsert('.');">.</button></td>
+	  <td><button id="numberButton0" class=zero-button onclick="insert(0)">0</button></td>
+	  <td><button id="numberButton1" class="calc-buttons" onclick="insert(1)">1</button></td>
+	  <td><button id="numberButton2" class=calc-buttons onclick="insert(2)">2</button></td>
+	  <td><button id="numberButton3" class=calc-buttons onclick="insert(3)">3</button></td>
+  </tr>
+  <tr>
+	  <td><button id="numberButton4" class=calc-buttons onclick="insert(4)">4</button></td>
+	  <td><button id="numberButton5" class=calc-buttons onclick="insert(5)">5</button></td>
+	  <td><button id="numberButton6" class=calc-buttons onclick="insert(6)">6</button></td>
+  </tr>
+  <tr>
+	  <td><button id="numberButton7" class="calc-buttons" onclick="insert(7)">7</button></td>
+	  <td><button id="numberButton8" class="calc-buttons"onclick="insert(8)">8</button></td>
+	  <td><button id="numberButton9" class="calc-buttons"onclick="insert(9)">9</button></td>
+  </tr>
+<tr>
+	<td><button id="equalButton" class="function-buttons" onclick="equal();">=</button></td>
+    <td><button id="additionSignButton" class="function-buttons" onclick="insert('+'); clearOnOp();">+</button></td>
+    <td><button id="subtractionSignButton" class=function-buttons onclick="insert('-'); clearOnOp();">-</button></td>
+    <td><button id="multipicationSignButton" class=function-buttons onclick="insert('*'); clearOnOp();">×</button></td>
+    <td><button id="divisionSignButton" class=function-buttons onclick="insert('/'); clearOnOp();">÷</button></td>
+</tr>
+<tr>
+<td><button id="clearButton" class=clear-button onclick="clearCalc()">AC</button></td>
+    <td><button id="negativeSignButton" class=function-buttons onclick="numberNegation();">+/-</button></td>
+    <td><button id="percentageButton" class=function-buttons onclick="numberPercentage();">%</button></td>
+<td><button id ="piButton" class=function-buttons onclick=piInsert(3.1415926)>π</button></td>
+</table>	  
    </body>
 </html>
