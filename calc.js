@@ -4,7 +4,7 @@ var total = "0";
 
 do {
 
-function numberButton1() {
+function buttonNumber1() {
   display = display.toString();
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
@@ -14,7 +14,7 @@ function numberButton1() {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(2) {
+function buttonNumber2() {
   display = display.toString();
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
@@ -24,7 +24,7 @@ function button(2) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(3) {
+function buttonNumber3() {
   display = display.toString();
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
@@ -34,7 +34,7 @@ function button(3) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(4) {
+function buttonNumber4() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -43,7 +43,7 @@ function button(4) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(5) {
+function buttonNumber5() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -52,7 +52,7 @@ function button(5) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(6) {
+function buttonNumber6() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -61,7 +61,7 @@ function button(6) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(7) {
+function buttonNumber7() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -70,7 +70,7 @@ function button(7) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(8) {
+function buttonNumber8() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -79,7 +79,7 @@ function button(8) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(9) {
+function buttonNumber9() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -88,7 +88,7 @@ function button(9) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button(0) {
+function buttonNumber0() {
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
   }
@@ -97,7 +97,7 @@ function button(0) {
   display = document.getElementById("display").innerHTML;
 }
 
-function button('+') {
+function addSignButton() {
     if (document.getElementById('total').innerHTML === "0") {
       extraWipe();
     }
@@ -109,7 +109,7 @@ function button('+') {
     wipe();
   }
 
-function button('-') {
+function subtractSignButton() {
     if (document.getElementById("total").innerHTML === "0") {
        extraWipe();
     }
@@ -121,7 +121,7 @@ function button('-') {
     wipe();
   }
 
-function button('*') {
+function multiplySignButton() {
 if (document.getElementById('total').innerHTML === "0") {
       extraWipe();
     }
@@ -133,7 +133,7 @@ if (document.getElementById('total').innerHTML === "0") {
     wipe();
   }
 
-function button('/') {
+function divideSignButton() {
 if (document.getElementById('total').innerHTML === "0") {
       extraWipe();
     }
@@ -145,31 +145,18 @@ if (document.getElementById('total').innerHTML === "0") {
     wipe();
   }
 
-function decimalInsert('.') {
+function decimalSignButton() {
   display = document.getElementById("display").innerHTML;
   display = display.toString();
   document.getElementById("display").textContent += ".";
   display = document.getElementById("display").innerHTML;
 }
 
-function wipe() {
+function clearSignButton() {
   document.getElementById("display").innerHTML = "0";
 }
 
-function extraWipe() {
-  document.getElementById("total").innerHTML = "";
-}
-
-function clean() {
-  document.getElementById("display").innerHTML = "0";
-}
-
-function extraClean() {
-  document.getElementById("display").innerHTML = "0";
-  document.getElementById("total").innerHTML = "0";
-}
-
-function numberNegation() {
+function negativeSignNumber() {
   display = document.getElementById("display").innerHTML;
   display = eval(display) * -1;
   if ((Number.isNaN(display)) || (display === "Infinity" || (display === "/0") || (display[1,2] === "**") || (display[1,2] === "++") || (display[1,2] === "--"))){
@@ -181,7 +168,7 @@ function numberNegation() {
   }
 }
 
-function numberPercentage() {
+function percentageSignButton() {
   display = document.getElementById("display").innerHTML;
   display = eval(display);
   display = display / 100;
@@ -194,7 +181,7 @@ function numberPercentage() {
   }
 }
 
-  function equal() {
+  function equalSignButton() {
     total = document.getElementById("total").innerHTML;
     total = total.toString();
     total += display;
