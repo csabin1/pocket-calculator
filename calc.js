@@ -46,7 +46,7 @@ if(num === '*' || num === '/' || num === '+'|| num === '-'){
     document.getElementById("buttonNumber7").disabled = true;
     document.getElementById("buttonNumber8").disabled = true;
     document.getElementById("buttonNumber9").disabled = true;
-    document.getElementById("decimalSignButton").disabled = true;
+    document.getElementById("decimalButton").disabled = true;
   }
 
   if(decimalNumInsert == false){
@@ -77,7 +77,7 @@ function clearCalc(){
     document.getElementById("buttonNumber7").disabled = false;
     document.getElementById("buttonNumber8").disabled = false;
     document.getElementById("buttonNumber9").disabled = false;
-    document.getElementById("decimalSignButton").disabled = false;
+    document.getElementById("decimalButton").disabled = false;
 }
 function clearOnOp(){
   opInserted = false
@@ -101,7 +101,7 @@ function clearOnOp(){
   document.getElementById("buttonNumber7").disabled = false;
   document.getElementById("buttonNumber8").disabled = false;
   document.getElementById("buttonNumber9").disabled = false;
-  document.getElementById("decimalSignButton").disabled = false;
+  document.getElementById("decimalButton").disabled = false;
 }
 function equal(){
   symbolStatus = false
@@ -110,7 +110,7 @@ function equal(){
 
 
 
-  document.getElementById("decimalSignButton").disabled = true;
+  document.getElementById("decimalButton").disabled = true;
   document.getElementById("buttonNumber0").disabled = true;
   document.getElementById("buttonNumber1").disabled = true;
   document.getElementById("buttonNumber2").disabled = true;
