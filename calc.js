@@ -4,7 +4,7 @@ var total = "0";
 
 do {
 
-function button(1) {
+function numberButton1() {
   display = display.toString();
   if (document.getElementById("display").innerHTML === "0") {
     wipe();
