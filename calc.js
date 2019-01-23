@@ -87,6 +87,27 @@ function addSignNumber() {
           zeroWipe();
       }
       
+  function operator(name) {
+          if (document.getElementById('total').innerHTML === "0") {
+            totalWipe();
+          }
+          total += display;
+          if ((total.charAt(total.length-2) === "-") ||(total.charAt(total.length-2) === "*") || (total.charAt(total.length-2) === "/") || (total.charAt(total.length-1) === "+")) {
+            total = document.getElementById("total").innerHTML;
+            total = total.toString();
+            total = total.replace(total.charAt(total.length-2), name)
+            document.getElementById("total").innerHTML = total;
+            zeroWipe();
+          }
+          else {
+          total = document.getElementById("total").innerHTML;
+          total = total.toString();
+          total += display;
+          total += name;
+          document.getElementById("total").innerHTML = total;
+          zeroWipe();
+        }
+        }
 
 function decimalSignButton() {
   display = document.getElementById("display").innerHTML;
@@ -103,6 +124,10 @@ function decimalSignButton() {
 
 function clean() {
   document.getElementById("display").innerHTML = "0";
+}
+
+  function zeroWipe() {
+  document.getElementById("display").innerHTML = "";
 }
 
 
