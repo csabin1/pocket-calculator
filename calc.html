@@ -19,29 +19,31 @@
       </div>
 	  <center>
 	<table>
+		
+		<!---if onclick="button()" does not work, use insert instead of button --->
   <tr>
-	  <td><button id="numberButton0" class=zero-button onclick="insert(0)">0</button></td>
-	  <td><button id="numberButton1" class="calc-buttons" onclick="insert(1)">1</button></td>
-	  <td><button id="numberButton2" class=calc-buttons onclick="insert(2)">2</button></td>
-	  <td><button id="numberButton3" class=calc-buttons onclick="insert(3)">3</button></td>
+	  <td><button id="numberButton0" class=zero-button onclick="button(0)">0</button></td>
+	  <td><button id="numberButton1" class="calc-buttons" onclick="button(1)">1</button></td>
+	  <td><button id="numberButton2" class=calc-buttons onclick="button(2)">2</button></td>
+	  <td><button id="numberButton3" class=calc-buttons onclick="button(3)">3</button></td>
   </tr>
   <tr>
-	  <td><button id="numberButton4" class=calc-buttons onclick="insert(4)">4</button></td>
-	  <td><button id="numberButton5" class=calc-buttons onclick="insert(5)">5</button></td>
-	  <td><button id="numberButton6" class=calc-buttons onclick="insert(6)">6</button></td>
+	  <td><button id="numberButton4" class=calc-buttons onclick="button(4)">4</button></td>
+	  <td><button id="numberButton5" class=calc-buttons onclick="button(5)">5</button></td>
+	  <td><button id="numberButton6" class=calc-buttons onclick="button(6)">6</button></td>
   </tr>
   <tr>
-	  <td><button id="numberButton7" class="calc-buttons" onclick="insert(7)">7</button></td>
-	  <td><button id="numberButton8" class="calc-buttons" onclick="insert(8)">8</button></td>
-	  <td><button id="numberButton9" class="calc-buttons" onclick="insert(9)">9</button></td>
+	  <td><button id="numberButton7" class="calc-buttons" onclick="button(7)">7</button></td>
+	  <td><button id="numberButton8" class="calc-buttons" onclick="button(8)">8</button></td>
+	  <td><button id="numberButton9" class="calc-buttons" onclick="button(9)">9</button></td>
 	  <td><button id="decimalButton" class="calc-buttons" onclick="decimalInsert('.');">.</button></td>
   </tr>
 <tr>
 	<td><button id="equalSignButton" class="function-buttons" onclick="equal();">=</button></td>
-    <td><button id="additionSignButton" class="function-buttons" onclick="insert('+'); clearOnOp();">+</button></td>
-    <td><button id="subtractionSignButton" class="function-buttons" onclick="insert('-'); clearOnOp();">-</button></td>
-    <td><button id="multipicationSignButton" class="function-buttons" onclick="insert('*'); clearOnOp();">×</button></td>
-    <td><button id="divisionSignButton" class="function-buttons" onclick="insert('/'); clearOnOp();">÷</button></td>
+    <td><button id="additionSignButton" class="function-buttons" onclick="button('+'); clearOnOp();">+</button></td>
+    <td><button id="subtractionSignButton" class="function-buttons" onclick="button('-'); clearOnOp();">-</button></td>
+    <td><button id="multipicationSignButton" class="function-buttons" onclick="button('*'); clearOnOp();">×</button></td>
+    <td><button id="divisionSignButton" class="function-buttons" onclick="button('/'); clearOnOp();">÷</button></td>
 </tr>
 <tr>
 <td><button id="clearButton" class="clear-button" onclick="clearCalc()">AC</button></td>
