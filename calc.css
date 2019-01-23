@@ -1,11 +1,7 @@
-#numberButton0 {
-  width:100px;
-  height: 100px;
+.numberButton0 {
+  width: 80px;
+  height: 80px;
   background-color: #FFCCCC;
-  color: black;
-  border: 5px black;
-  font-size: 30px;
-  font: "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
 
 .numberButton1 {
