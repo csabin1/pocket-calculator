@@ -1,50 +1,53 @@
-<!DOCTYPE.html>
+<!DOCTYPE html>
+
 <html>
-   <head>
-	   <title>APCSP Pocket Calculator</title>
-	   <link rel="stylesheet" type="text/css" href="calc.css"/>
-	   <script type="text/javascript" src="calc.js"></script>
-	</head>
-   <body>
-	   <h2>Clarissa Sabin</h2>
-	   <h3>A 3-4 Pocket Calculator</h3>
-      <form name=”calculator">
-	      <table>
-		      <tr>
-			      <td>
-				      <input type="text" name="display" id="display" disabled>
-			      </td>
-		      </tr>
-		      <tr>
-			    <td><input type="button" class="button" value="1" onclick="one()">
-        <input type="button" class="button" value="2" onclick="two()">
-        <input type="button" class="button" value="3" onclick="three()">
-        <input type="button" id="plus" 	class="button" 	value="+"  onclick="Plus()">
-										   </tr>
-										   <tr>
-        <input type="button" class="button" value="4" onclick="four()">
-        <input type="button" class="button" value="5" onclick="five()">
-        <input type="button" class="button" value="6" onclick="six()">
-        <input type="button" id="minus" 	class="button" 	value="-" onclick="Minus()" >
-											   </tr>
-											   <tr>
+  <head>
+    <title>Pocket Calculator</title>
+  <link rel="stylesheet" type="text/css" href="pocket-calculator.css">
+  <script type="text/javascript" src="pocket-calculator.js"></script>
+  </head>
+	<body>
+		<h3>AP COmp Sci Pocket Calculator</h3>
+		<h2>Clarissa Sabin</h2>
+	</body>
 
-        <input type="button" class="button" value="7" onclick="seven()">
-        <input type="button" class="button" value="8" onclick="eight()">
-        <input type="button" class="button" value="9" onclick="nine()">
-        <input type="button" id="divide" 	class="button" 	value="/" onclick="Divide()" >
-											    </tr>
-											    <tr>
-
-        <input type="button" class="button" value="0" onclick="zero()">
-        <input type="button" class="button" value="C" onclick="C()">
-								   </tr>
-								   <tr>
-
-        <input type="button" class="button"	value="=" onclick="Equals()">
-        <input type="button" class="button" 	value="*" onclick="Multiply()">
-									      </tr>
-	      </table>
+  <body onload="clearCalc()">
+    <div class=calculator>
+      <form name="calc">
+        <input name="display" disabled>
       </form>
+      </div>
+     
+	   <table>
+        <tr>
+          <td><button class = "number" onclick = "numberOne()" >1</button>
+          <td><button class = "number" onclick = "numberTwo()">2</button>
+          <td><button class = "number" onclick = "numberThree()">3</button>
+          <td><button id = "addSign" class = "operator" onclick = "addSign()">+</button>
+          <td><button class = "mod" onclick = "percent()">%</button>
+        </tr>
+        <tr>
+          <td><button class = "number" onclick = "numberFour()">4</button>
+          <td><button class = "number" onclick = "numberFive()">5</button>
+          <td><button class = "number" onclick = "numberSix()">6</button>
+          <td><button class = "operator" onclick = "minusSign()">-</button>
+          <td><button class = "mod" onclick = "opposite()">+/-</button>
+        </tr>
+        <tr>
+          <td><button class = "number" onclick = "numberSeven()">7</button>
+          <td><button class = "number" onclick = "numberEight()">8</button>
+          <td><button class = "number" onclick = "numberNine()">9</button>
+          <td><button class = "operator" onclick = "multiplySign()">x</button>
+          <td rowspan = "2"><button  class = "mod" id = "tall" onclick = "clean()">AC</button>
+        </tr>
+        <tr>
+          <td colspan = "2"><button classs = "number" id = "wide" onclick = "numberZero()">0</button>
+          <td><button id = "decimalPlace" onclick = "decimalPlace()">.</button>
+          <td><button class = "operator" onclick = "divideSign()">/</button>
+        </tr>
+        <tr>
+          <td colspan = "5"><button class = "operator" id = "superwide" onclick = "equals()">=</button>
+      </table>
+	  
    </body>
 </html>
