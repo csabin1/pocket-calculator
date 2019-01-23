@@ -16,12 +16,12 @@ button:hover {
 #multiplcationSignButton{
   position:absolute;
   left:802px;
-  top:299px;
+  top:199px;
 }
 #subtractionSignButton{
   position:absolute;
   left:802px;
-  top:450px;
+  top:350px;
 }
 #additionSignButton{
   position:absolute;
@@ -31,27 +31,27 @@ button:hover {
 #equalSignButton{
   position:absolute;
   left:802px;
-  top:752px;
+  top:652px;
 }
 #decimalSignButton{
   position:absolute;
   left:651px;
-  top:752px;
+  top:652px;
 }
 #buttonNumber0{
   position:absolute;
   left:349px;
-  top:752px;
+  top:652px;
 }
 #buttonNumber1{
   position:absolute;
   left:349px;
-  top:601px;
+  top:501px;
 }
 #buttonNumber2{
   position:absolute;
   left:500px;
-  top:601px;
+  top:501px;
 }
 #buttonNumber3{
   position:absolute;
@@ -61,32 +61,32 @@ button:hover {
 #buttonNumber4{
   position:absolute;
   left:349px;
-  top:450px;
+  top:350px;
 }
 #buttonNumber5{
   position:absolute;
   left: 500px;
-  top: 450px;
+  top: 350px;
 }
 #buttonNumber6{
   position:absolute;
   left:651px;
-  top:450px;
+  top:350px;
 }
 #buttonNumber7{
 position:absolute;
 left:349px;
-top:299px;
+top:199px;
 }
 #buttonNumber8{
 position:absolute;
 left:500px;
-top:299px;
+top:199px;
 }
 #buttonNumber9{
 position:absolute;
 left:651px;
-top:299px;
+top:199px;
 }
 #clearSignButton{
   position:absolute;
