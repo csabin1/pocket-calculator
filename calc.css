@@ -143,6 +143,7 @@ body {
 }
 
 #zero-button {
+  
 }
 
 #calc-buttons {
@@ -152,6 +153,15 @@ body {
 }
 
 #clear-button {
+}
+
+div div {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  font-size: 40px;
+  font-family: monospace;
+  text-align: center;
 }
 
 
