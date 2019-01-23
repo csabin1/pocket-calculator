@@ -1,6 +1,6 @@
 body {
   background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/theworldstro.jpg");
-  background-size: 900px 100px;
+  background-size: 600px 920px;
 }
 
 button:hover {
@@ -8,87 +8,87 @@ button:hover {
   color: white;
 }
 
-#divisionButton{
+#divisionSignButton{
   position:absolute;
   left:802px;
   top:148px;
 }
-#multiplcationButton{
+#multiplcationSignButton{
   position:absolute;
   left:802px;
   top:299px;
 }
-#subtractionButton{
+#subtractionSignButton{
   position:absolute;
   left:802px;
   top:450px;
 }
-#additionButton{
+#additionSignButton{
   position:absolute;
   left:802px;
   top:601px;
 }
-#equalButton{
+#equalSignButton{
   position:absolute;
   left:802px;
   top:752px;
 }
-#decimalButton{
+#decimalSignButton{
   position:absolute;
   left:651px;
   top:752px;
 }
-#buttonNum0{
+#buttonNumber0{
   position:absolute;
   left:349px;
   top:752px;
 }
-#buttonNum1{
+#buttonNumber1{
   position:absolute;
   left:349px;
   top:601px;
 }
-#buttonNum2{
+#buttonNumber2{
   position:absolute;
   left:500px;
   top:601px;
 }
-#buttonNum3{
+#buttonNumber3{
   position:absolute;
   left:651px;
   top:601px;
 }
-#buttonNum4{
+#buttonNumber4{
   position:absolute;
   left:349px;
   top:450px;
 }
-#buttonNum5{
+#buttonNumber5{
   position:absolute;
   left: 500px;
   top: 450px;
 }
-#buttonNum6{
+#buttonNumber6{
   position:absolute;
   left:651px;
   top:450px;
 }
-#buttonNum7{
+#buttonNumber7{
 position:absolute;
 left:349px;
 top:299px;
 }
-#buttonNum8{
+#buttonNumber8{
 position:absolute;
 left:500px;
 top:299px;
 }
-#buttonNum9{
+#buttonNumber9{
 position:absolute;
 left:651px;
 top:299px;
 }
-#clearButton{
+#clearSignButton{
   position:absolute;
   left:349px;
   top:148px;
@@ -136,12 +136,12 @@ top:299px;
   font-family: sans-serif;
 }
 
-#negationButton{
+#negationSignButton{
   position:absolute;
   left:500px;
   top:148px;
 }
-#percentageButton{
+#percentageSignButton{
   position:absolute;
   left:651px;
   top:148px;
