@@ -63,7 +63,25 @@
     <button type="button" class="button" onclick="piSignButton()">π</button>
 		</tr>
 </table>
-
+<button id="decimalButton" class="number-buttons" onclick="decimalInsert('.');">.</button>
+    <button id="buttonNumber0" class=zero-button onclick="insert(0)">0</button>
+    <button id="buttonNumber1" class="number-buttons" onclick="insert(1)">1</button>
+    <button id="buttonNumber2" class="number-buttons" onclick="insert(2)">2</button>
+    <button id="buttonNumber3" class="number-buttons" onclick="insert(3)">3</button>
+    <button id="buttonNumber4" class="number-buttons" onclick="insert(4)">4</button>
+    <button id="buttonNumber5" class="number-buttons" onclick="insert(5)">5</button>
+    <button id="buttonNumber6" class="number-buttons" onclick="insert(6)">6</button>
+    <button id="buttonNumber7" class="number-buttons" onclick="insert(7)">7</button>
+    <button id="buttonNumber8" class="number-buttons" onclick="insert(8)">8</button>
+    <button id="buttonNumber9" class="number-buttons" onclick="insert(9)">9</button>
+    <button id="equalSignButton" class="function-buttons" onclick="equal();">=</button>
+    <button id="additionSignButton" class="function-buttons" onclick="insert('+'); clearOnOp();">+</button>
+    <button id="subtractionSignButton" class="function-buttons" onclick="insert('-'); clearOnOp();">-</button>
+    <button id="multiplcationSignButton" class="function-buttons" onclick="insert('*'); clearOnOp();">×</button>
+    <button id="divisionSignButton" class="function-buttons" onclick="insert('/'); clearOnOp();">÷</button>
+    <button id="clearSignButton" class="clear-button" onclick="clearCalc()">AC</button>
+    <button id="negationSignButton" class="top-buttons" onclick="numberNegation();">+/-</button>
+    <button id="percentageSignButton" class="top-buttons" onclick="numberPercentage();">%</button>
       </body>
 </div>
 </html>
