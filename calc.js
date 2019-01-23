@@ -4,162 +4,112 @@ var total = "0";
 
 do {
 
-function buttonNumber1() {
+function buttonnumber(number) {
+  number = number.toString();
   display = display.toString();
   if (document.getElementById("display").innerHTML === "0") {
-    wipe();
+    zeroWipe();
   }
-  display = display.toString();
-  document.getElementById("display").textContent += "1";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber2() {
-  display = display.toString();
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
+  if (display.indexOf("e") > -1) {
+    display = Number(display);
+    display = display.toString();
+    display += number;
+    display = Number(display);
+    display = display.toExponential(5);
+    document.getElementById("display").innerHTML = display;
   }
+  else {
   display = display.toString();
-  document.getElementById("display").textContent += "2";
+  document.getElementById("display").textContent += number;
   display = document.getElementById("display").innerHTML;
-}
 
-function buttonNumber3() {
-  display = display.toString();
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "3";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber4() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "4";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber5() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "5";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber6() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "6";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber7() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "7";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber8() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "8";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber9() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "9";
-  display = document.getElementById("display").innerHTML;
-}
-
-function buttonNumber0() {
-  if (document.getElementById("display").innerHTML === "0") {
-    wipe();
-  }
-  display = display.toString();
-  document.getElementById("display").textContent += "0";
-  display = document.getElementById("display").innerHTML;
-}
-
-function addSignButton() {
-    if (document.getElementById('total').innerHTML === "0") {
-      extraWipe();
+    if (display.length > 9) {
+    display = Number(display);
+    display = display.toExponential(5);
+    display = display.toString();
     }
+  document.getElementById("display").innerHTML = display;
+  }
+}
+
+function addSignNumber() {
+    if (document.getElementById('total').innerHTML === "0") {
+      totalWipe();
+    }
+    if ((total.charAt(total.length-1) === "-") ||(total.charAt(total.length-1) === "*") || (total.charAt(total.length-1) === "/")) {
+      total = document.getElementById("total").innerHTML;
+      total = total.toString();
+      total = total.replace(total.charAt(total.length-1), "+")
+      document.getElementById("total").innerHTML = total;
+      zeroWipe();
+    }
+    else {
     total = document.getElementById("total").innerHTML;
     total = total.toString();
     total += display;
     total += "+";
     document.getElementById("total").innerHTML = total;
-    wipe();
+    zeroWipe();
   }
-
-function subtractSignButton() {
-    if (document.getElementById("total").innerHTML === "0") {
-       extraWipe();
-    }
-       total = document.getElementById("total").innerHTML;
-    total = total.toString();
-    total += display;
-    total += "-";
-    document.getElementById("total").innerHTML = total;
-    wipe();
   }
-
-function multiplySignButton() {
-if (document.getElementById('total').innerHTML === "0") {
-      extraWipe();
-    }
-    total = document.getElementById("total").innerHTML;
-    total = total.toString();
-    total += display;
-    total += "*";
-    document.getElementById("total").innerHTML = total;
-    wipe();
-  }
-
-function divideSignButton() {
-if (document.getElementById('total').innerHTML === "0") {
-      extraWipe();
-    }
-    total = document.getElementById("total").innerHTML;
-    total = total.toString();
-    total += display;
-    total += "/";
-    document.getElementById("total").innerHTML = total;
-    wipe();
-  }
+  function subtractSignNumber() {
+      if (document.getElementById('total').innerHTML === "0") {
+        totalWipe();
+      }
+      total = document.getElementById("total").innerHTML;
+      total = total.toString();
+      total += display;
+      total += "-";
+      document.getElementById("total").innerHTML = total;
+      zeroWipe();
+      display = document.getElementById("display").innerHTML;
+      }
+    function multiplySignNumber() {
+        if (document.getElementById('total').innerHTML === "0") {
+          totalWipe();
+        }
+        total = document.getElementById("total").innerHTML;
+        total = total.toString();
+        total += display;
+        total += "*";
+        document.getElementById("total").innerHTML = total;
+        zeroWipe();
+      }
+      function divideSignNumber() {
+          if (document.getElementById('total').innerHTML === "0") {
+            totalWipe();
+          }
+        total = document.getElementById("total").innerHTML;
+          total = total.toString();
+          total += display;
+          total += "/";
+          document.getElementById("total").innerHTML = total;
+          zeroWipe();
+      }
+      
 
 function decimalSignButton() {
   display = document.getElementById("display").innerHTML;
   display = display.toString();
+  if (display.indexOf(".") > -1) {
+
+  }
+  else {
   document.getElementById("display").textContent += ".";
   display = document.getElementById("display").innerHTML;
 }
+}
 
-function clearSignButton() {
+
+function clean() {
   document.getElementById("display").innerHTML = "0";
 }
 
-function negativeSignNumber() {
+
+function negativeSignButton() {
   display = document.getElementById("display").innerHTML;
   display = eval(display) * -1;
-  if ((Number.isNaN(display)) || (display === "Infinity" || (display === "/0") || (display[1,2] === "**") || (display[1,2] === "++") || (display[1,2] === "--"))){
+    if ((Number.isNaN(eval(display))) || (eval(display) === "Infinity") || (total.indexOf("/0") > -1) || (total.indexOf("**") > -1) || (total.indexOf("++") > -1)){
     document.getElementById("display").innerHTML = "Sorry, that is not a valid operation";
   }
 
@@ -170,38 +120,78 @@ function negativeSignNumber() {
 
 function percentageSignButton() {
   display = document.getElementById("display").innerHTML;
-  display = eval(display);
-  display = display / 100;
-  if ((Number.isNaN(display)) || (display === "Infinity" || (display === "/0") || (display[1,2] === "**") || (display[1,2] === "++") || (display[1,2] === "--"))){
+  if ((Number.isNaN(eval(display))) || (eval(display) === "Infinity") || (total.indexOf("/0") > -1) || (total.indexOf("**") > -1) || (total.indexOf("++") > -1)){
     document.getElementById("display").innerHTML = "Sorry, that is not a valid operation";
   }
-
   else {
+    if (total.indexOf("--") > -1) {
+      total.replace("--", "+");
+    }
+  display = eval(display);
+  display = display / 100
   document.getElementById("display").innerHTML = eval(display);
   }
 }
 
   function equalSignButton() {
+    display = document.getElementById("display").innerHTML;
+    console.log(display, "first display");
     total = document.getElementById("total").innerHTML;
-    total = total.toString();
+    if (total === "0") {
+      totalWipe();
+    }
+    total = document.getElementById("total").innerHTML;
+    console.log(total, "first total")
     total += display;
+    console.log(total, "second total");
     document.getElementById("total").innerHTML = total;
-    if ((Number.isNaN(total)) || (eval(total) === null) || (eval(total) === undefined) || (eval(total) === "Infinity")){
+      if ((Number.isNaN(eval(display))) || (eval(display) === "Infinity") || (total.indexOf("/0") > -1) || (total.indexOf("**") > -1) || (total.indexOf("++") > -1)){
       document.getElementById("display").innerHTML = "Sorry, that is not a valid operation"
     }
+    else {
     if (total.indexOf("--") > -1) {
       total.replace("--", "+");
     }
-    document.getElementById("display").innerHTML = eval(total);
 
+    if (display.indexOf("--") > -1) {
+      display.replace("--", "+");
+    }
+
+    if (total.indexOf(",") > -1) {
+      total.replace(",", "");
+    }
+
+    if (display.indexOf(",") > -1) {
+      display.replace(",", "");
+    }
+
+
+    if (total.toString() === "0") {
+      document.getElementById("display").innerHTML = eval(display);
+    }
+    else {
+    total = document.getElementById("total").innerHTML;
+    display = eval(total);
+    display = display.toString();
+    if (display.length > 9) {
+      display = Number(display);
+      display = display.toExponential();
+      document.getElementById("display").innerHTML = display;
+      console.log("it get's here");
+    }
+    else {
+    document.getElementById("display").innerHTML = eval(total).toLocaleString();
+    display = document.getElementById("display").innerHTML;
+    totalZeroWipe();
+    console.log(display, "second display");
+    console.log("ez clappers");
+    }
+  }
+}
 
 
     completed = true;
   }
 
-
-/*function pi() {
-  document.getElementById("display").textContent += "π";
-}*/
 
 } while(completed = false)
