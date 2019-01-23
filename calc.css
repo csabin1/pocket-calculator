@@ -1,7 +1,6 @@
 body {
   background-image: url("https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/theworldstro.jpg");
-  height: 900px;
-  width: 5000px;
+  background-size: 500px 1000px;
 }
 
 * {
