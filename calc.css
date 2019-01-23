@@ -7,139 +7,71 @@ body {
   height: 80px;
   background-color: #FFCCCC;
   border: blue
+  
 }
 
 .numberButton1 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton2 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton3 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton4 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton5 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton6 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton7 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton8 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .numberButton9 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .decimalButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .equalSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .additionSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
 }
 
 .subtractionSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .multipicationSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .divisionSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .clearButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .negativeSignButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .percentageButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 .piButton {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
+
 }
 
 #zero-button {
@@ -155,13 +87,6 @@ body {
 #clear-button {
 }
 
-div div {
-  width: 100px;
-  height: 100px;
-  border: 3px solid black;
-  font-size: 40px;
-  font-family: monospace;
-  text-align: center;
-}
+
 
 
