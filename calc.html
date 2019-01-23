@@ -18,9 +18,8 @@
       </form>
       </div>
 	  <center>
-	  <table>
+	<table>
   <tr>
-    <td><button id="decimalButton" class="calc-buttons" onclick="decimalInsert('.');">.</button></td>
 	  <td><button id="numberButton0" class=zero-button onclick="insert(0)">0</button></td>
 	  <td><button id="numberButton1" class="calc-buttons" onclick="insert(1)">1</button></td>
 	  <td><button id="numberButton2" class=calc-buttons onclick="insert(2)">2</button></td>
@@ -33,21 +32,22 @@
   </tr>
   <tr>
 	  <td><button id="numberButton7" class="calc-buttons" onclick="insert(7)">7</button></td>
-	  <td><button id="numberButton8" class="calc-buttons"onclick="insert(8)">8</button></td>
-	  <td><button id="numberButton9" class="calc-buttons"onclick="insert(9)">9</button></td>
+	  <td><button id="numberButton8" class="calc-buttons" onclick="insert(8)">8</button></td>
+	  <td><button id="numberButton9" class="calc-buttons" onclick="insert(9)">9</button></td>
+	  <td><button id="decimalButton" class="calc-buttons" onclick="decimalInsert('.');">.</button></td>
   </tr>
 <tr>
-	<td><button id="equalButton" class="function-buttons" onclick="equal();">=</button></td>
+	<td><button id="equalSignButton" class="function-buttons" onclick="equal();">=</button></td>
     <td><button id="additionSignButton" class="function-buttons" onclick="insert('+'); clearOnOp();">+</button></td>
-    <td><button id="subtractionSignButton" class=function-buttons onclick="insert('-'); clearOnOp();">-</button></td>
-    <td><button id="multipicationSignButton" class=function-buttons onclick="insert('*'); clearOnOp();">×</button></td>
-    <td><button id="divisionSignButton" class=function-buttons onclick="insert('/'); clearOnOp();">÷</button></td>
+    <td><button id="subtractionSignButton" class="function-buttons" onclick="insert('-'); clearOnOp();">-</button></td>
+    <td><button id="multipicationSignButton" class="function-buttons" onclick="insert('*'); clearOnOp();">×</button></td>
+    <td><button id="divisionSignButton" class="function-buttons" onclick="insert('/'); clearOnOp();">÷</button></td>
 </tr>
 <tr>
-<td><button id="clearButton" class=clear-button onclick="clearCalc()">AC</button></td>
-    <td><button id="negativeSignButton" class=function-buttons onclick="numberNegation();">+/-</button></td>
-    <td><button id="percentageButton" class=function-buttons onclick="numberPercentage();">%</button></td>
-<td><button id ="piButton" class=function-buttons onclick=piInsert(3.1415926)>π</button></td>
+<td><button id="clearButton" class="clear-button" onclick="clearCalc()">AC</button></td>
+    <td><button id="negativeSignButton" class="function-buttons" onclick="numberNegation();">+/-</button></td>
+    <td><button id="percentageButton" class="function-buttons" onclick="numberPercentage();">%</button></td>
+<td><button id ="piButton" class="function-buttons" onclick=piInsert(3.1415926)>π</button></td>
 </table>
 	  </center>
    </body>
