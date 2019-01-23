@@ -6,63 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="calc.css"/>
 	<script type="text/javascript" src="calc.js"></script>
   </head>
-	<body>
-		<center>
-		<h1>AP Comp Sci Pocket Calculator</h1>
-		<h2>Clarissa Sabin</h2>
-		</center>
-	</body>
-	
-	<center>
-
-<body>
-<body onload = 'extraClean();'>
-	
-	<div class = "answer">
-		
-        <h3> Display </h3>
-          <p id = "display">
-
-          </p>
-
-        </div>
-
-        </div>
-<div class = "grid">
-	
-	<div align="center">
-	<table>
-  <tr>
-    <button type="button" class="button" onclick="buttonNumber1()">1</button>
-    <button type="button" class="button" onclick="buttonNumber2()">2</button>
-    <button type="button" class="button" onclick="buttonNumber3()">3</button>
-		</tr>
-		<tr>
-    <button type="button" class="button" onclick="buttonNumber4()">4</button>
-    <button type="button" class="button" onclick="buttonNumber5()">5</button>
-    <button type="button" class="button" onclick="buttonNumber6()">6</button>
-  </tr>
-  <tr>
-      <button type="button" class="button" onclick="buttonNumber7()">7</button>
-    <button type="button" class="button" onclick="buttonNumber8()">8</button>
-    <button type="button" class="button" onclick="buttonNumber9()">9</button>
-<button type="button" class="button" onclick="buttonNumber0()">0</button>
-  </tr>
-<tr>
-<button type="button" class="operator" onclick="addSignButton()">+</button>
-    <button type="button" class="operator" onclick="subtractSignButton()">-</button>
-    <button type="button" class="operator" onclick="divideSignButton()">/</button>
-	<button type="button" class="operator" onclick="multiplySignButton()">*</button>
-	<button type="button" class="operator" onclick="equalSignButton()">=</button>
-		</tr>
-	<tr>
-	    <button type="button" class="button" onclick="percentageSignButton()">%</button>
-    <button type="button" class="button" onclick="negativeSignButton()">+/-</button>
-    <button type="button" class="button" onclick="clearSignButton()">Clear</button>
- <button type="button" class="button" onclick="decimalSignButton()">.</button>
-    <button type="button" class="button" onclick="piSignButton()">π</button>
-		</tr>
-</table>
+	  <body onload="clearCalc()">
+      <div class=calculator>
+      <form name="calc">
+        <input name="display" disabled>
+	      
 <button id="decimalButton" class="number-buttons" onclick="decimalInsert('.');">.</button>
     <button id="buttonNumber0" class=zero-button onclick="insert(0)">0</button>
     <button id="buttonNumber1" class="number-buttons" onclick="insert(1)">1</button>
