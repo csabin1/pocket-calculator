@@ -3,8 +3,8 @@
 <html>
   <head>
     <title>Pocket Calculator</title>
-  <link rel="stylesheet" type="text/css" href="calc.css">
-  <script type="text/javascript" src="calc.js"></script>
+	<link rel="stylesheet" type="text/css" href="calc.css>
+	<script type="text.javascript" src="calc.js"></script>
   </head>
 	<body>
 		<center>
@@ -12,46 +12,12 @@
 		<h2>Clarissa Sabin</h2>
 		</center>
 	</body>
-<center>
-  <body onload="clearCalc()">
-    <div class=calculator>
-      <form name="calc">
-        <input name="display" disabled>
-      </form>
+<body>
+	<div class = "grid">
+    <div id="1button">
+          <button onclick = "button1();">1</button>
       </div>
-	<table>
-		
-		<!---if onclick="button()" does not work, use insert instead of button --->
-  <tr>
-	  <td><button id="numberButton0" class="zero-buttons" onclick="button(0)">0</button></td>
-	  <td><button id="numberButton1" class="calc-buttons" onclick="button1()">1</button></td>
-	  <td><button id="numberButton2" class="calc-buttons" onclick="button(2)">2</button></td>
-	  <td><button id="numberButton3" class="calc-buttons" onclick="button(3)">3</button></td>
-  </tr>
-  <tr>
-	  <td><button id="numberButton4" class=calc-buttons onclick="button(4)">4</button></td>
-	  <td><button id="numberButton5" class=calc-buttons onclick="button(5)">5</button></td>
-	  <td><button id="numberButton6" class=calc-buttons onclick="button(6)">6</button></td>
-  </tr>
-  <tr>
-	  <td><button id="numberButton7" class="calc-buttons" onclick="button(7)">7</button></td>
-	  <td><button id="numberButton8" class="calc-buttons" onclick="button(8)">8</button></td>
-	  <td><button id="numberButton9" class="calc-buttons" onclick="button(9)">9</button></td>
-	  <td><button id="decimalButton" class="calc-buttons" onclick="decimalInsert('.');">.</button></td>
-  </tr>
-<tr>
-	<td><button id="equalSignButton" class="function-buttons" onclick="equal();">=</button></td>
-    <td><button id="additionSignButton" class="function-buttons" onclick="button('+'); clearOnOp();">+</button></td>
-    <td><button id="subtractionSignButton" class="function-buttons" onclick="button('-'); clearOnOp();">-</button></td>
-    <td><button id="multipicationSignButton" class="function-buttons" onclick="button('*'); clearOnOp();">×</button></td>
-    <td><button id="divisionSignButton" class="function-buttons" onclick="button('/'); clearOnOp();">÷</button></td>
-</tr>
-<tr>
-<td><button id="clearButton" class="clear-button" onclick="clearCalc()">AC</button></td>
-    <td><button id="negativeSignButton" class="function-buttons" onclick="numberNegation();">+/-</button></td>
-    <td><button id="percentageButton" class="function-buttons" onclick="numberPercentage();">%</button></td>
-<td><button id ="piButton" class="function-buttons" onclick=piInsert(3.1415926)>π</button></td>
-</table>
-	  </center>
+	<div id="button1" onclick="buttonNumber1();">1</button>
+	
    </body>
 </html>
