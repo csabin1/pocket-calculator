@@ -2,91 +2,25 @@ body {
   background-color: lightblue;
 }
 
-.numberButton0 {
-  width: 80px;
-  height: 80px;
-  background-color: #FFCCCC;
-  border: blue
-  
+* {
+  font-family: "Times New Roman", Times, serif;
 }
 
-.numberButton1 {
+button {
+  height: 100px;
+  width: 100px;
 }
 
-.numberButton2 {
+.grid {
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
 }
 
-.numberButton3 {
+#total {
+  background-color: yellow;
 }
 
-.numberButton4 {
+p:empty {
+  background-color: green;
 }
-
-.numberButton5 {
-}
-
-.numberButton6 {
-}
-
-.numberButton7 {
-}
-
-.numberButton8 {
-}
-
-.numberButton9 {
-}
-
-.decimalButton {
-}
-
-.equalSignButton {
-}
-
-.additionSignButton {
-}
-
-.subtractionSignButton {
-
-}
-
-.multipicationSignButton {
-
-}
-
-.divisionSignButton {
-
-}
-
-.clearButton {
-
-}
-
-.negativeSignButton {
-
-}
-
-.percentageButton {
-
-}
-
-.piButton {
-
-}
-
-#zero-button {
-  
-}
-
-#calc-buttons {
-}
-
-#function-buttons {
-}
-
-#clear-button {
-}
-
-
-
-
