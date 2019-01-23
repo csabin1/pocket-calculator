@@ -28,13 +28,13 @@ button:hover {
   left:802px;
   top:450px;
 }
-#equalButton{
+#equalSignButton{
   position:absolute;
   left:802px;
   top:550px;
 }
 
-#decimalSignButton{
+#decimalButton{
   position:absolute;
   left:575px;
   top:550px;
