@@ -28,7 +28,7 @@ button:hover {
   left:802px;
   top:450px;
 }
-#equalSignButton{
+#equalButton{
   position:absolute;
   left:802px;
   top:550px;
@@ -42,7 +42,7 @@ button:hover {
 #buttonNumber0{
   position:absolute;
   left:349px;
-  top:652px;
+  top:550px;
 }
 #buttonNumber1{
   position:absolute;
