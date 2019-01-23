@@ -1,57 +1,80 @@
-margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 16px;
-	vertical-align: baseline;
-	background: transparent;
+.numberButton0 {
+  width:100px;
+  height: 100px;
+  background-color: #FFCCCC;
+  color: black;
+  border: 5px black;
+  font-size: 30px;
+  font: "Century Gothic", "Century Gothic", "Apple Gothic", sans-serif;
 }
-body {
-	line-height: 1;
+
+.numberButton1 {
 }
-ul {
-	list-style: none;
+
+.numberButton2 {
+}
+
+.numberButton3 {
+}
+
+.numberButton4 {
+}
+
+.numberButton5 {
+}
+
+.numberButton6 {
+}
+
+.numberButton7 {
+}
+
+.numberButton8 {
+}
+
+.numberButton9 {
+}
+
+.decimalButton {
+}
+
+.equalSignButton {
+}
+
+.additionSignButton {
+}
+
+.subtractionSignButton {
+}
+
+.multipicationSignButton {
+}
+
+.divisionSignButton {
+}
+
+.clearButton {
+}
+
+.negativeSignButton {
+}
+
+.percentageButton {
+}
+
+.piButton {
+}
+
+#zero-button {
+}
+
+#calc-buttons {
+}
+
+#function-buttons {
+}
+
+#clear-button {
 }
 
 
-
-body {
-	width: 500px;
-}
-form {
-	background-color: gray;
-	text-align: center;
-	padding: 7px;
-	
-}
-
-#display {
-	width: 98%;
-	height: 30px;
-	text-align: right;
-	font-size: 1.5rem;
-}
-.digit {
-	font-size: 2rem;
-	background-color: red;
-	height: 55px;
-	width: 20%;
-	border-radius: 5px;
-	display: inline-block;
-	padding: 5px;
-}
-.oper {
-	font-size: 2rem;
-	background-color: blue;
-	height: 55px;
-	width: 20%;
-	border-radius: 5px;
-	display: inline-block;
-	padding: 5px;
-}
-#clearMem {
-	background-color: green;
-}
-#equal {
-	background-color: yellow;
-}
