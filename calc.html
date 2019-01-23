@@ -7,25 +7,26 @@
   <script type="text/javascript" src="calc.js"></script>
   </head>
 	<body>
-		<h3>AP Comp Sci Pocket Calculator</h3>
-		<h2>Clarissa Sabin</h2>
+		<center>
+		<h4>AP Comp Sci Pocket Calculator</h4>
+		<h3>Clarissa Sabin</h3>
+		</center>
 	</body>
-
+<center>
   <body onload="clearCalc()">
     <div class=calculator>
       <form name="calc">
         <input name="display" disabled>
       </form>
       </div>
-	  <center>
 	<table>
 		
 		<!---if onclick="button()" does not work, use insert instead of button --->
   <tr>
-	  <td><button id="numberButton0" class=zero-button onclick="button(0)">0</button></td>
+	  <td><button id="numberButton0" class="zero-button" onclick="button0()">0</button></td>
 	  <td><button id="numberButton1" class="calc-buttons" onclick="button(1)">1</button></td>
-	  <td><button id="numberButton2" class=calc-buttons onclick="button(2)">2</button></td>
-	  <td><button id="numberButton3" class=calc-buttons onclick="button(3)">3</button></td>
+	  <td><button id="numberButton2" class="calc-buttons" onclick="button(2)">2</button></td>
+	  <td><button id="numberButton3" class="calc-buttons" onclick="button(3)">3</button></td>
   </tr>
   <tr>
 	  <td><button id="numberButton4" class=calc-buttons onclick="button(4)">4</button></td>
